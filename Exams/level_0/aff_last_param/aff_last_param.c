@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   aff_a.c                                            :+:      :+:    :+:   */
+/*   aff_last_param.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: danmarti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -25,9 +25,9 @@ int	main(int argc, char **argv)
 	i = 0;
 	if (argc > 1)
 	{
-		while (argv[1][i] != '\0')
+		while (argv[argc-1][i] != '\0')
 		{
-			ft_putchar(argv[1][i]);
+			ft_putchar(argv[argc-1][i]);
 			i++;
 		}
 	}
