@@ -1,2 +1,3 @@
+[![HitCount](http://hits.dwyl.com/DannMartinnez/42_Piscine_C.svg)](http://hits.dwyl.com/DannMartinnez/42_Piscine_C)
 # 42_Piscine_C
-After my piscine I felt like to solve each exercise again, here is the result for you.
+My solutions for the piscine C. July 2019.
