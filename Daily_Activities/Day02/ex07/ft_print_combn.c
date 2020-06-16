@@ -10,12 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1,&c,1);
-}
+void	ft_putchar(char c);
 
 void	ft_xd(int n, int i, int *a, int j)
 {
@@ -36,9 +31,7 @@ void	ft_xd(int n, int i, int *a, int j)
 					ft_putchar(' ');
 				}
 				while (++j <= n - 1)
-				{
 					ft_putchar(a[j] + '0');
-				}
 				a[i] = a[i] + 1;
 				j = -1;
 			}
@@ -46,6 +39,7 @@ void	ft_xd(int n, int i, int *a, int j)
 		a[i] = a[i] + 1;
 	}
 }
+
 void	ft_print_combn(int n)
 {
 	int a[n];
@@ -55,11 +49,5 @@ void	ft_print_combn(int n)
 	j = -1;
 	a[0] = 0;
 	i = 0;
-	ft_xd(n,i,a,j);
-}
-
-int	main(void)
-{
-	ft_print_combn(2);
-	return (0);
+	ft_xd(n, i, a, j);
 }
